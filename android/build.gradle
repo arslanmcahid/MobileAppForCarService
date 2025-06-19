@@ -1,0 +1,52 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+// android {
+//     signingConfigs {
+//         release {
+//             keyAlias keystoreProperties['keyAlias']
+//             keyPassword keystoreProperties['keyPassword']
+//             storeFile file(keystoreProperties['storeFile'])
+//             storePassword keystoreProperties['storePassword']
+//         }
+//     }
+
+//     buildTypes {
+//         release {
+//             signingConfig signingConfigs.release
+//         }
+//     }
+// }
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0'
+        // varsa diğer classpath'ler
+    }
+} 

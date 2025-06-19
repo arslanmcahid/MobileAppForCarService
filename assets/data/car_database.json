@@ -1,0 +1,192 @@
+{
+  "brands": {
+    "Peugeot": {
+      "models": {
+        "301": {
+          "variants": {
+            "1.2 PureTech Active": {
+              "engine": "1.2L PureTech",
+              "fuel_type": "Benzin",
+              "year_range": "2012-2020",
+              "maintenance_schedule": {
+                "oil_change": {
+                  "interval_km": 15000,
+                  "interval_months": 12,
+                  "description": "Motor yağı ve filtre değişimi"
+                },
+                "brake_fluid": {
+                  "interval_km": 40000,
+                  "interval_months": 24,
+                  "description": "Fren hidroliği değişimi"
+                },
+                "air_filter": {
+                  "interval_km": 30000,
+                  "interval_months": 24,
+                  "description": "Hava filtresi değişimi"
+                },
+                "spark_plugs": {
+                  "interval_km": 60000,
+                  "interval_months": 48,
+                  "description": "Buji değişimi"
+                },
+                "timing_belt": {
+                  "interval_km": 120000,
+                  "interval_months": 96,
+                  "description": "Triger kayışı ve gergi rulmanı değişimi"
+                }
+              },
+              "common_parts": [
+                "Motor yağı 5W30",
+                "Yağ filtresi",
+                "Hava filtresi",
+                "Polen filtresi",
+                "Fren balata takımı",
+                "Amortisör"
+              ]
+            },
+            "1.6 HDi Active": {
+              "engine": "1.6L HDi",
+              "fuel_type": "Dizel",
+              "year_range": "2012-2020",
+              "maintenance_schedule": {
+                "oil_change": {
+                  "interval_km": 20000,
+                  "interval_months": 12,
+                  "description": "Motor yağı ve filtre değişimi"
+                },
+                "fuel_filter": {
+                  "interval_km": 40000,
+                  "interval_months": 24,
+                  "description": "Yakıt filtresi değişimi"
+                },
+                "air_filter": {
+                  "interval_km": 40000,
+                  "interval_months": 24,
+                  "description": "Hava filtresi değişimi"
+                },
+                "timing_belt": {
+                  "interval_km": 160000,
+                  "interval_months": 120,
+                  "description": "Triger kayışı değişimi"
+                }
+              }
+            }
+          }
+        },
+        "308": {
+          "variants": {
+            "1.6 THP": {
+              "engine": "1.6L THP",
+              "fuel_type": "Benzin",
+              "year_range": "2013-2021"
+            }
+          }
+        }
+      }
+    },
+    "Toyota": {
+      "models": {
+        "Corolla": {
+          "variants": {
+            "1.6 Valvematic": {
+              "engine": "1.6L Valvematic",
+              "fuel_type": "Benzin",
+              "year_range": "2013-2019",
+              "maintenance_schedule": {
+                "oil_change": {
+                  "interval_km": 10000,
+                  "interval_months": 12,
+                  "description": "Motor yağı ve filtre değişimi"
+                },
+                "air_filter": {
+                  "interval_km": 40000,
+                  "interval_months": 48,
+                  "description": "Hava filtresi değişimi"
+                },
+                "spark_plugs": {
+                  "interval_km": 100000,
+                  "interval_months": 120,
+                  "description": "Buji değişimi"
+                }
+              }
+            },
+            "1.4 D-4D": {
+              "engine": "1.4L D-4D",
+              "fuel_type": "Dizel",
+              "year_range": "2013-2019"
+            }
+          }
+        },
+        "Yaris": {
+          "variants": {
+            "1.3 VVT-i": {
+              "engine": "1.3L VVT-i",
+              "fuel_type": "Benzin",
+              "year_range": "2011-2020"
+            }
+          }
+        }
+      }
+    },
+    "BMW": {
+      "models": {
+        "3 Series": {
+          "variants": {
+            "320i": {
+              "engine": "2.0L TwinPower Turbo",
+              "fuel_type": "Benzin",
+              "year_range": "2012-2019",
+              "maintenance_schedule": {
+                "oil_change": {
+                  "interval_km": 15000,
+                  "interval_months": 12,
+                  "description": "Motor yağı ve filtre değişimi"
+                },
+                "brake_pads": {
+                  "interval_km": 60000,
+                  "interval_months": 60,
+                  "description": "Fren balata değişimi"
+                }
+              }
+            },
+            "320d": {
+              "engine": "2.0L TwinPower Turbo Diesel",
+              "fuel_type": "Dizel",
+              "year_range": "2012-2019"
+            }
+          }
+        }
+      }
+    },
+    "Ford": {
+      "models": {
+        "Focus": {
+          "variants": {
+            "1.6 Ti-VCT": {
+              "engine": "1.6L Ti-VCT",
+              "fuel_type": "Benzin",
+              "year_range": "2011-2018"
+            },
+            "1.6 TDCi": {
+              "engine": "1.6L TDCi",
+              "fuel_type": "Dizel",
+              "year_range": "2011-2018"
+            }
+          }
+        }
+      }
+    }
+  },
+  "general_maintenance_tips": {
+    "benzin": [
+      "Düzenli yağ değişimi motor ömrünü uzatır",
+      "Kaliteli yakıt kullanın",
+      "Buji kontrolü önemlidir"
+    ],
+    "dizel": [
+      "DPF filtre temizliği önemlidir",
+      "Uzun yol kullanımı tercih edilmelidir",
+      "AdBlue seviyesini kontrol edin"
+    ]
+  }
+} 
