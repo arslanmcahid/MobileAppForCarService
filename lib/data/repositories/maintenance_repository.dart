@@ -286,6 +286,24 @@ class MaintenanceRepository {
     }
   }
 
+  /// Get all maintenance records for the current user with car info
+  Future<List<Map<String, dynamic>>> getMaintenanceHistory() async {
+    try {
+      if (_currentUserId == null) return [];
+
+      final response = await _supabase
+          .from('maintenance_records')
+          .select('*, cars(*)')
+          .eq('user_id', _currentUserId!)
+          .order('date_performed', ascending: false);
+
+      return List<Map<String, dynamic>>.from(response);
+    } catch (e) {
+      print('❌ Error fetching maintenance history: $e');
+      return [];
+    }
+  }
+
   Future<List<Maintenance>> getAllMaintenance() async {
     // Legacy method - not implemented for Supabase yet
     return [];

@@ -8,6 +8,7 @@ import '../presentation/screens/home_screen.dart';
 import '../presentation/screens/cars/cars_screen.dart';
 import '../presentation/screens/cars/car_detail_screen.dart';
 import '../presentation/screens/maintenance/add_maintenance_screen.dart';
+import '../presentation/screens/maintenance/maintenance_screen.dart';
 import '../providers/auth_provider.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -75,6 +76,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       
       // Maintenance routes
+      GoRoute(
+        path: '/maintenance',
+        builder: (context, state) => const MaintenanceScreen(),
+      ),
       GoRoute(
         path: '/maintenance/add',
         builder: (context, state) {
